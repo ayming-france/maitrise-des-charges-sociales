@@ -912,7 +912,7 @@
       gap: 30px;
       width: 100%;
       max-width: 1050px;
-      margin: -20px auto 0;
+      margin: -10px auto 0;
       padding: 0;
     }
 
@@ -921,13 +921,13 @@
     }
 
     .implantation-na {
-      height: 560px;
+      height: min(560px, calc(100vh - 220px));
       width: auto;
       object-fit: contain;
     }
 
     .implantation-eu {
-      height: 560px;
+      height: min(560px, calc(100vh - 220px));
       width: auto;
       object-fit: contain;
     }
@@ -940,6 +940,7 @@
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
+      max-height: 100%;
     }
 
     .ancrage-text {
@@ -961,10 +962,11 @@
       flex: 1;
       display: flex;
       justify-content: center;
+      min-height: 0;
     }
 
     .ancrage-map img {
-      height: 540px;
+      max-height: min(540px, calc(100vh - 180px));
       width: auto;
       object-fit: contain;
     }
@@ -1763,7 +1765,7 @@
               bulletins erron&eacute;s
             </div>
             <div class="floating-badge bottom-left">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <i data-lucide="clock"></i>
               100+ &eacute;volutions/an
             </div>
           </div>
@@ -1900,7 +1902,7 @@
           <!-- Ideal 1 -->
           <div class="column-card ideal-card">
             <div class="card-image">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              <i data-lucide="clipboard-check"></i>
             </div>
             <h3>Diagnostic exhaustif et r&eacute;cup&eacute;ration</h3>
             <p>V&eacute;rification poste par poste sur les ann&eacute;es ant&eacute;rieures, identification des trop-vers&eacute;s et accompagnement jusqu'&agrave; l'encaissement effectif</p>
@@ -1909,7 +1911,7 @@
           <!-- Ideal 2 -->
           <div class="column-card ideal-card">
             <div class="card-image">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              <i data-lucide="refresh-cw"></i>
             </div>
             <h3>Fiabilisation durable</h3>
             <p>Correction des erreurs &agrave; la source, transfert de comp&eacute;tences &agrave; l'&eacute;quipe paie et veille l&eacute;gislative pour que les erreurs ne se reproduisent plus</p>
@@ -1918,7 +1920,7 @@
           <!-- Ideal 3 -->
           <div class="column-card ideal-card">
             <div class="card-image">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <i data-lucide="shield-check"></i>
             </div>
             <h3>S&eacute;curit&eacute; juridique</h3>
             <p>Des pr&eacute;conisations fond&eacute;es sur l'analyse d'un cabinet d'avocats ind&eacute;pendants, choisi d'un commun accord, sans perturber la production de paie</p>
@@ -1987,7 +1989,7 @@
           <!-- Theme 1 -->
           <div class="feature-item">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              <i data-lucide="clipboard-check"></i>
             </div>
             <div class="feature-content">
               <h4>Diagnostic exhaustif des cotisations sociales</h4>
@@ -1998,7 +2000,7 @@
           <!-- Theme 2 -->
           <div class="feature-item">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <i data-lucide="euro"></i>
             </div>
             <div class="feature-content">
               <h4>R&eacute;cup&eacute;ration des trop-vers&eacute;s sur les ann&eacute;es ant&eacute;rieures</h4>
@@ -2009,7 +2011,7 @@
           <!-- Theme 3 -->
           <div class="feature-item">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              <i data-lucide="refresh-cw"></i>
             </div>
             <div class="feature-content">
               <h4>Fiabilisation durable des pratiques de paie</h4>
@@ -2020,7 +2022,7 @@
           <!-- Theme 4 -->
           <div class="feature-item">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <i data-lucide="shield-check"></i>
             </div>
             <div class="feature-content">
               <h4>Appui juridique par un cabinet d'avocats ind&eacute;pendants</h4>
@@ -2043,27 +2045,19 @@
 
           <ul class="value-detail-list">
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Diagnostic poste par poste couvrant l'ensemble des cotisations URSSAF et taxes sur les salaires
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               V&eacute;rification des all&egrave;gements de charges et dispositifs d'exon&eacute;ration applicables
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Analyse des cr&eacute;dits d'imp&ocirc;t sociaux et contributions AGEFIPH
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Examen des pratiques li&eacute;es aux arr&ecirc;ts de travail et cat&eacute;gories de salari&eacute;s sp&eacute;cifiques
             </li>
           </ul>
@@ -2088,27 +2082,19 @@
 
           <ul class="value-detail-list">
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Chiffrage pr&eacute;cis des trop-vers&eacute;s identifi&eacute;s sur 3 exercices
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Accompagnement dans les d&eacute;marches de r&eacute;gularisation aupr&egrave;s de chaque organisme
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               R&eacute;gularisation technique via les d&eacute;clarations DSN
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Suivi des remboursements jusqu'&agrave; l'encaissement effectif
             </li>
           </ul>
@@ -2133,27 +2119,19 @@
 
           <ul class="value-detail-list">
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Correction des param&eacute;trages dans le logiciel de paie pour &eacute;liminer les erreurs &agrave; la source
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Transfert de comp&eacute;tences &agrave; l'&eacute;quipe paie sur les points de vigilance identifi&eacute;s
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Veille documentaire sur les &eacute;volutions l&eacute;gislatives impactant les cotisations
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Suivi dans la dur&eacute;e pour &eacute;viter la r&eacute;currence des erreurs
             </li>
           </ul>
@@ -2178,27 +2156,19 @@
 
           <ul class="value-detail-list">
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Mission men&eacute;e sur la base de pr&eacute;conisations d'un cabinet d'avocats ind&eacute;pendants et sp&eacute;cialis&eacute;s
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Cabinet choisi d'un commun accord entre Ayming et le client
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               Pr&eacute;conisations juridiquement fond&eacute;es, pas de simples estimations de consultants
             </li>
             <li>
-              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
+              <i data-lucide="check" class="check-icon"></i>
               S&eacute;curisation des r&eacute;gularisations vis-&agrave;-vis des organismes sociaux
             </li>
           </ul>
@@ -2255,7 +2225,7 @@
                 <p class="testimonial-title">Diagnostic et maitrise des charges sociales</p>
                 <div class="testimonial-logo"><img src="https://www.ayming.fr/wp-content/uploads/sites/3/2025/08/sisca_logo-176x176.jpg" alt="Groupe SISCA"></div>
                 <span class="testimonial-hint">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                  <i data-lucide="refresh-cw"></i>
                   D&eacute;couvrir
                 </span>
               </div>
@@ -2282,7 +2252,7 @@
                 <p class="testimonial-title">R&eacute;duction et maitrise des charges sociales</p>
                 <div class="testimonial-logo"><img src="https://www.ayming.fr/wp-content/uploads/sites/3/2025/04/cropped-cropped-EHPAD-Saint-Dominique_arcachon-176x55.png" alt="EHPAD Saint Dominique"></div>
                 <span class="testimonial-hint">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                  <i data-lucide="refresh-cw"></i>
                   D&eacute;couvrir
                 </span>
               </div>
@@ -2309,7 +2279,7 @@
                 <p class="testimonial-title">Maitrise des cotisations sociales</p>
                 <div class="testimonial-logo"><img src="https://www.ayming.fr/wp-content/uploads/sites/3/2025/08/Logo-BUT.jpg" alt="BUT"></div>
                 <span class="testimonial-hint">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                  <i data-lucide="refresh-cw"></i>
                   D&eacute;couvrir
                 </span>
               </div>
@@ -2383,7 +2353,7 @@
           <!-- FAQ 1 -->
           <div class="faq-card">
             <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <i data-lucide="monitor"></i>
               Notre logiciel de paie est &agrave; jour
             </h4>
             <p>Le logiciel calcule &agrave; partir du param&eacute;trage existant. Si le param&eacute;trage est incorrect, le logiciel reproduit l'erreur chaque mois. 72 &agrave; 80% des bulletins contiennent des erreurs malgr&eacute; les mises &agrave; jour.</p>
@@ -2392,7 +2362,7 @@
           <!-- FAQ 2 -->
           <div class="faq-card">
             <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <i data-lucide="building-2"></i>
               Notre expert-comptable l'aurait vu
             </h4>
             <p>L'expert-comptable a une vision comptable (comptes 43x), pas une vision paie (bulletin par bulletin). Les trop-vers&eacute;s de cotisation ne se voient pas dans les comptes mais dans le d&eacute;tail de chaque bulletin.</p>
@@ -2401,7 +2371,7 @@
           <!-- FAQ 3 -->
           <div class="faq-card">
             <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <i data-lucide="shield-check"></i>
               La r&eacute;gularisation va d&eacute;clencher un contr&ocirc;le
             </h4>
             <p>Le droit &agrave; l'erreur (loi ESSOC 2018) permet une r&eacute;gularisation de bonne foi sans sanction. R&eacute;gulariser volontairement est toujours pr&eacute;f&eacute;rable &agrave; une d&eacute;couverte lors d'un contr&ocirc;le.</p>
@@ -2410,7 +2380,7 @@
           <!-- FAQ 4 -->
           <div class="faq-card">
             <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              <i data-lucide="users"></i>
               Ca remet en question l'&eacute;quipe paie
             </h4>
             <p>Les erreurs sont structurelles, pas individuelles. Avec plus de 100 &eacute;volutions l&eacute;gislatives par an, aucune &eacute;quipe ne peut tout suivre. Le diagnostic fiabilise et forme l'&eacute;quipe.</p>
@@ -2473,27 +2443,15 @@
           <h4>Pour d&eacute;marrer le diagnostic</h4>
           <ul>
             <li>
-              <span class="check-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </span>
+              <span class="check-icon"><i data-lucide="check"></i></span>
               Acc&egrave;s aux fichiers de paie des ann&eacute;es ant&eacute;rieures r&eacute;cup&eacute;rables
             </li>
             <li>
-              <span class="check-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </span>
+              <span class="check-icon"><i data-lucide="check"></i></span>
               Conventions collectives, accords d'entreprise et notifications de taux AT/MP
             </li>
             <li>
-              <span class="check-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </span>
+              <span class="check-icon"><i data-lucide="check"></i></span>
               Entretien avec le responsable paie (2 heures)
             </li>
           </ul>
@@ -2675,5 +2633,8 @@
     updateSlide();
   </script>
 
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
