@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optimisation des charges sociales - Ayming</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://ayming-france.github.io/assets/slides/slides.css">
+  <link rel="stylesheet" href="https://ayming-france.github.io/assets/engine/slides.css">
   <style>
     /* Small screen overrides for corporate laptops (1366x768, 1440x900) */
     @media (max-height: 800px) {
@@ -104,7 +104,7 @@
       </div>
       <div class="nav-item" data-slide="3">
         <span class="nav-item-number">04</span>
-        Comparaison
+        Leviers
       </div>
       <div class="nav-item" data-slide="4">
         <span class="nav-item-number">05</span>
@@ -246,80 +246,107 @@
       </div>
     </section>
 
-    <!-- SLIDE 3: ALTERNATIVES TABLE -->
-    <section class="slide" data-chapter="alternatives">
-      <div class="slide-inner">
-        <h1 class="slide-title">Chaque approche a ses limites</h1>
+    <!-- SLIDE 3: ICEBERG - LEVIERS D'ECONOMIES -->
+    <section class="slide" data-chapter="alternatives" style="padding: 0;">
+      <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;">
+        <defs>
+          <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#eef2f6"/></linearGradient>
+          <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d6da0"/><stop offset="40%" stop-color="#00456d"/><stop offset="100%" stop-color="#002840"/></linearGradient>
+          <linearGradient id="iceT" x1="0.3" y1="0" x2="0.7" y2="1"><stop offset="0%" stop-color="#d4eaf5"/><stop offset="50%" stop-color="#b0d8ed"/><stop offset="100%" stop-color="#8ac4e0"/></linearGradient>
+          <linearGradient id="iceB" x1="0.3" y1="0" x2="0.7" y2="1"><stop offset="0%" stop-color="#3ab4de"/><stop offset="40%" stop-color="#11a9e6"/><stop offset="100%" stop-color="#0ab38c"/></linearGradient>
+          <linearGradient id="iceBF" x1="0.6" y1="0" x2="0.3" y2="1"><stop offset="0%" stop-color="#0fa7e2"/><stop offset="100%" stop-color="#089b7d"/></linearGradient>
+          <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0fa7e2"/><stop offset="100%" stop-color="#0ab38c"/></linearGradient>
+          <filter id="s1"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.1)"/></filter>
+          <filter id="s2"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="rgba(0,0,0,0.2)"/></filter>
+          <filter id="gl"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="rgba(255,255,255,0.35)"/></filter>
+          <clipPath id="sC"><rect y="400" width="1920" height="680"/></clipPath>
+        </defs>
 
-        <div class="table-container">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Approche</th>
-                <th>Avantages</th>
-                <th>Inconv&eacute;nients</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Statu quo</td>
-                <td>
-                  <ul>
-                    <li>Pas de co&ucirc;t externe</li>
-                    <li>Pas de perturbation</li>
-                    <li>Sentiment de normalit&eacute;</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Trop-vers&eacute;s qui s'accumulent sans d&eacute;tection</li>
-                    <li>Risque croissant en cas de contr&ocirc;le URSSAF</li>
-                    <li>Perte d&eacute;finitive au-del&agrave; des ann&eacute;es r&eacute;cup&eacute;rables</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>&Eacute;quipe paie</td>
-                <td>
-                  <ul>
-                    <li>Connaissance du contexte</li>
-                    <li>Aucun co&ucirc;t suppl&eacute;mentaire</li>
-                    <li>Ma&icirc;trise du processus</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>L'&eacute;quipe produit, elle ne v&eacute;rifie pas</li>
-                    <li>Plus de 100 &eacute;volutions/an d&eacute;passent la capacit&eacute; de suivi</li>
-                    <li>Pas de comp&eacute;tence en diagnostic r&eacute;troactif</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>Expert-comptable</td>
-                <td>
-                  <ul>
-                    <li>Relation de confiance</li>
-                    <li>Vision comptable globale</li>
-                    <li>Pas de co&ucirc;t suppl&eacute;mentaire per&ccedil;u</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Vision comptable (43x), pas vision paie</li>
-                    <li>Pas d'expertise en exon&eacute;rations et all&egrave;gements</li>
-                    <li>Mission ponctuelle, pas continue</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <!-- Background: waterline at y=400 -->
+        <rect width="1920" height="400" fill="url(#skyG)"/>
+        <rect y="400" width="1920" height="680" fill="url(#seaG)"/>
 
-      <div class="company-logo">
-        <img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Logo">
-      </div>
+        <!-- Light rays -->
+        <line x1="370" y1="0" x2="420" y2="400" stroke="rgba(255,255,255,0.1)" stroke-width="50"/>
+        <line x1="240" y1="0" x2="310" y2="400" stroke="rgba(255,255,255,0.05)" stroke-width="35"/>
+        <line x1="520" y1="0" x2="530" y2="400" stroke="rgba(255,255,255,0.07)" stroke-width="40"/>
+
+        <!-- Iceberg tip (small, base 300-540 matches body) -->
+        <polygon points="300,392 420,180 540,392" fill="url(#iceT)" filter="url(#s1)" stroke="rgba(17,169,230,0.15)" stroke-width="1"/>
+        <polygon points="420,180 490,300 540,392 420,392" fill="rgba(255,255,255,0.25)"/>
+        <circle cx="420" cy="195" r="14" fill="rgba(255,255,255,0.4)" filter="url(#gl)"/>
+
+        <!-- Iceberg body -->
+        <g clip-path="url(#sC)">
+          <polygon points="300,400 170,900 280,1010 560,1010 680,900 540,400" fill="url(#iceB)" opacity="0.3" filter="url(#s2)"/>
+          <polygon points="420,400 170,900 280,1010 420,970" fill="url(#iceBF)" opacity="0.2"/>
+          <polygon points="420,400 540,400 680,900 560,1010 420,970" fill="rgba(255,255,255,0.05)"/>
+          <ellipse cx="420" cy="1010" rx="80" ry="16" fill="rgba(10,179,140,0.1)"/>
+        </g>
+
+        <!-- Waterline -->
+        <path d="M0 397 Q70 390 140 397 Q210 404 280 397 Q350 390 420 397 Q490 404 560 397 Q630 390 700 397 Q770 404 840 397 Q910 390 980 397 Q1050 404 1120 397 Q1190 390 1260 397 Q1330 404 1400 397 Q1470 390 1540 397 Q1610 404 1680 397 Q1750 390 1820 397 Q1870 404 1920 397" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+        <!-- ===== TITLE (same height as other slides: ~y=130) ===== -->
+        <text x="760" y="130" font-family="Lato, sans-serif" font-size="38" font-weight="700" fill="url(#bG)">Les &eacute;conomies invisibles de votre paie</text>
+
+        <!-- ===== VISIBLE ===== -->
+        <text x="760" y="195" font-family="Lato, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#6b7280">CE QUE VOTRE LOGICIEL G&Egrave;RE</text>
+        <rect x="760" y="205" width="80" height="4" rx="2" fill="url(#bG)"/>
+
+        <circle cx="774" cy="244" r="6" fill="#0ab38c"/><text x="792" y="250" font-family="Lato, sans-serif" font-size="18" font-weight="600" fill="#0f172a">Calcul des cotisations standards</text>
+        <circle cx="774" cy="280" r="6" fill="#0ab38c"/><text x="792" y="286" font-family="Lato, sans-serif" font-size="18" font-weight="600" fill="#0f172a">Application de la convention collective</text>
+        <circle cx="774" cy="316" r="6" fill="#0ab38c"/><text x="792" y="322" font-family="Lato, sans-serif" font-size="18" font-weight="600" fill="#0f172a">DSN et d&eacute;clarations mensuelles</text>
+
+        <!-- Divider at waterline -->
+        <rect x="760" y="400" width="1060" height="2" fill="rgba(17,169,230,0.2)"/>
+
+        <!-- ===== INVISIBLE ===== -->
+        <text x="760" y="452" font-family="Lato, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="rgba(255,255,255,0.5)">CE QUE PERSONNE NE V&Eacute;RIFIE</text>
+        <rect x="760" y="462" width="80" height="4" rx="2" fill="url(#bG)"/>
+
+        <!-- Left column (x=760) -->
+        <text x="760" y="504" font-family="Lato, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#11a9e6">EXON&Eacute;RATIONS DE CHARGES</text>
+        <circle cx="766" cy="528" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="534" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">R&eacute;duction g&eacute;n&eacute;rale / RGDU 2026</text>
+        <circle cx="766" cy="556" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="562" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Cotisation alloc. familiales et maladie</text>
+        <circle cx="766" cy="584" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="590" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Exon&eacute;rations g&eacute;ographiques</text>
+        <circle cx="766" cy="612" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="618" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Exon&eacute;rations sous conditions d'effectif</text>
+        <circle cx="766" cy="640" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="646" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Aide &agrave; domicile</text>
+
+        <text x="760" y="688" font-family="Lato, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#11a9e6">SALARI&Eacute;S PARTICULIERS ET TIERS</text>
+        <circle cx="766" cy="712" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="718" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Expatri&eacute;s, impatri&eacute;s, d&eacute;tach&eacute;s</text>
+        <circle cx="766" cy="740" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="746" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Stagiaires, contrats aid&eacute;s</text>
+        <circle cx="766" cy="768" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="774" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">M&eacute;decins</text>
+        <circle cx="766" cy="796" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="802" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Mandataires sociaux</text>
+
+        <text x="760" y="846" font-family="Lato, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#11a9e6">ABSENT&Eacute;ISME</text>
+        <circle cx="766" cy="870" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="778" y="876" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Indemnit&eacute;s journali&egrave;res SS et pr&eacute;voyance</text>
+
+        <!-- Right column (x=1340) -->
+        <text x="1340" y="504" font-family="Lato, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#11a9e6">AUTRES COTISATIONS ET TAXES</text>
+        <circle cx="1346" cy="528" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="534" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Versement Mobilit&eacute;</text>
+        <circle cx="1346" cy="556" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="562" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Contribution OETH</text>
+        <circle cx="1346" cy="584" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="590" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Forfaits sociaux et R&eacute;int&eacute;gration sociale</text>
+        <circle cx="1346" cy="612" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="618" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Taxe sur les salaires</text>
+        <circle cx="1346" cy="640" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="646" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Cr&eacute;dit imp&ocirc;t famille</text>
+        <circle cx="1346" cy="668" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="674" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Taxes parafiscales</text>
+
+        <text x="1340" y="716" font-family="Lato, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#11a9e6">PRIMES ET R&Eacute;MUN&Eacute;RATION</text>
+        <circle cx="1346" cy="740" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="746" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Avantages en nature</text>
+        <circle cx="1346" cy="768" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="774" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">D&eacute;duction forfaitaire sp&eacute;cifique</text>
+        <circle cx="1346" cy="796" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="802" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Primes li&eacute;es &agrave; la mobilit&eacute;</text>
+        <circle cx="1346" cy="824" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="830" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Prime panier</text>
+        <circle cx="1346" cy="852" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="858" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Prime transport</text>
+        <circle cx="1346" cy="880" r="3.5" fill="#11a9e6" opacity="0.4"/><text x="1358" y="886" font-family="Lato, sans-serif" font-size="17" fill="rgba(255,255,255,0.7)">Autres primes soumises &agrave; charges</text>
+
+        <!-- Counter badge -->
+        <rect x="240" y="960" width="340" height="54" rx="27" fill="url(#bG)" filter="url(#s2)"/>
+        <text x="410" y="994" text-anchor="middle" font-family="Lato, sans-serif" font-size="20" font-weight="700" fill="white">25+ leviers sous la surface</text>
+
+        <!-- Down arrow -->
+        <line x1="720" y1="460" x2="720" y2="930" stroke="rgba(17,169,230,0.12)" stroke-width="2.5"/>
+        <polygon points="715,925 720,945 725,925" fill="rgba(17,169,230,0.18)"/>
+      </svg>
     </section>
 
     <!-- SLIDE 4: MONDE IDEAL -->
@@ -644,6 +671,10 @@
       <div class="slide-inner">
         <h1 class="slide-title">Ils nous font confiance</h1>
 
+        <style>
+          .testimonial-card .testimonial-front img { filter: brightness(0.8) saturate(0.85); transition: filter 0.4s ease; }
+          .testimonial-card:hover .testimonial-front img { filter: brightness(0.65) saturate(0.8); }
+        </style>
         <div class="testimonial-grid count-3">
 
           <!-- Card 1: Groupe SISCA -->
@@ -912,7 +943,7 @@
     <span><span class="key" id="key-fullscreen">F</span> Plein &eacute;cran</span>
   </div>
 
-  <script src="https://ayming-france.github.io/assets/slides/slides.js"></script>
+  <script src="https://ayming-france.github.io/assets/engine/slides.js"></script>
 
 <!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
