@@ -649,15 +649,39 @@
           plus loin
         </h1>
 
+        <style>
+          .option-card { text-decoration: none; color: inherit; flex: 1; max-width: 360px; border-radius: 16px; }
+          .option-card .column-card { cursor: pointer; }
+          .option-card .card-image { position: relative; overflow: hidden; border-radius: 12px; }
+          .option-card .card-image img { transition: transform 0.4s ease; }
+          .option-card .card-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(0,61,121,0.7) 0%, rgba(10,179,140,0.6) 100%);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.4s ease; border-radius: 12px;
+          }
+          .option-card .card-overlay span {
+            color: #fff; font-size: 14px; font-weight: 600;
+            padding: 10px 24px; border: 2px solid #fff; border-radius: 30px;
+            letter-spacing: 0.5px; transition: background 0.3s ease;
+          }
+          .option-card:hover .card-overlay { opacity: 1; }
+          .option-card:hover .card-image img { transform: scale(1.05); }
+          .option-card:hover .card-overlay span { background: rgba(255,255,255,0.15); }
+        </style>
+
         <div style="display: flex; justify-content: center; max-width: 380px; margin: 0 auto;">
           <!-- OPTION 1 -->
-          <div class="column-card">
-            <div class="card-image">
-              <img src="https://www.ayming.fr/wp-content/uploads/sites/3/2025/11/ursaff.jpg" alt="Accompagnement controle URSSAF">
+          <a href="https://ayming-france.github.io/accompagnement-controle-urssaf/" target="_blank" class="option-card">
+            <div class="column-card">
+              <div class="card-image">
+                <img src="https://www.ayming.fr/wp-content/uploads/sites/3/2025/11/ursaff.jpg" alt="Accompagnement controle URSSAF">
+                <div class="card-overlay"><span>D&eacute;couvrir cette offre</span></div>
+              </div>
+              <h3>Accompagnement contr&ocirc;le URSSAF</h3>
+              <p>Pr&eacute;paration avant le contr&ocirc;le, pr&eacute;sence pendant, analyse et v&eacute;rification des calculs d&eacute;taill&eacute;s des observations apr&egrave;s. Approche compl&eacute;mentaire du diagnostic des charges sociales.</p>
             </div>
-            <h3>Accompagnement contr&ocirc;le URSSAF</h3>
-            <p>Pr&eacute;paration avant le contr&ocirc;le, pr&eacute;sence pendant, analyse et v&eacute;rification des calculs d&eacute;taill&eacute;s des observations apr&egrave;s. Approche compl&eacute;mentaire du diagnostic des charges sociales.</p>
-          </div>
+          </a>
         </div>
       </div>
 
