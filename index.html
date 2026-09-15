@@ -8,6 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://ayming-france.github.io/assets/engine/slides.css">
   <style>
+    section.iceberg-slide.iceberg-slide { padding: 0; }
+    .iceberg-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; }
+    .options-slide { background: var(--bg-light); }
+    .options-row { display: flex; justify-content: center; max-width: 380px; margin: 0 auto; }
+    .ancrage-title { text-align: left; margin-bottom: var(--space-28); }
     /* Small screen overrides for corporate laptops (1366x768, 1440x900) */
     @media (max-height: 800px) {
       .slide { padding: 40px 60px; }
@@ -70,7 +75,7 @@
       .ancrage-layout { gap: 30px; }
       .ancrage-text p { font-size: var(--font-15); }
     }
-      .next-step { margin-top: var(--space-34); padding: var(--space-18) var(--space-26); border-radius: var(--radius-14); background: linear-gradient(90deg, rgba(15,167,226,0.10), rgba(10,179,140,0.10)); border: 1px solid rgba(17,169,230,0.35); font-size: var(--font-18); font-weight: var(--weight-bold); color: var(--blue-dark); text-align: center; }
+      .next-step { margin-top: var(--space-34); padding: var(--space-18) var(--space-26); border-radius: var(--radius-14); background: linear-gradient(90deg, rgba(var(--blue-primary-rgb), 0.10), rgba(var(--gradient-green-end-rgb), 0.10)); border: 1px solid rgba(var(--blue-primary-rgb), 0.35); font-size: var(--font-18); font-weight: var(--weight-bold); color: var(--blue-dark); text-align: center; }
   </style>
 </head>
 <body data-audience="client">
@@ -253,8 +258,8 @@
     </section>
 
     <!-- SLIDE 3: ICEBERG - LEVIERS D'ECONOMIES -->
-    <section class="slide" data-chapter="alternatives" style="padding: 0;">
-      <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;">
+    <section class="slide iceberg-slide" data-chapter="alternatives">
+      <svg class="iceberg-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
         <defs>
           <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#eef2f6"/></linearGradient>
           <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d6da0"/><stop offset="40%" stop-color="#00456d"/><stop offset="100%" stop-color="#002840"/></linearGradient>
@@ -652,7 +657,7 @@
     </section>
 
     <!-- SLIDE 11: OPTIONS -->
-    <section class="slide" data-chapter="options" style="background: var(--bg-light);">
+    <section class="slide options-slide" data-chapter="options">
       <div class="slide-inner">
         <h1 class="slide-title">
           Options pour aller<br>
@@ -666,7 +671,7 @@
           .option-card .card-image img { transition: transform 0.4s ease; }
           .option-card .card-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(0,61,121,0.7) 0%, rgba(10,179,140,0.6) 100%);
+            background: linear-gradient(135deg, rgba(var(--blue-dark-rgb), 0.7) 0%, rgba(var(--gradient-green-end-rgb), 0.6) 100%);
             display: flex; align-items: center; justify-content: center;
             opacity: 0; transition: opacity 0.4s ease; border-radius: var(--radius-lg);
           }
@@ -680,7 +685,7 @@
           .option-card:hover .card-overlay span { background: rgba(255,255,255,0.15); }
         </style>
 
-        <div style="display: flex; justify-content: center; max-width: 380px; margin: 0 auto;">
+        <div class="options-row">
           <!-- OPTION 1 -->
           <a href="https://ayming-france.github.io/accompagnement-controle-urssaf/" target="_blank" class="option-card">
             <div class="column-card">
@@ -808,7 +813,7 @@
       <div class="slide-inner">
         <div class="ancrage-layout">
           <div class="ancrage-text">
-            <h1 class="slide-title" style="text-align: left; margin-bottom: 28px;">Un fort ancrage <strong>en France</strong>...</h1>
+            <h1 class="slide-title ancrage-title">Un fort ancrage <strong>en France</strong>...</h1>
             <p>Nos &eacute;quipes locales accompagnent au quotidien nos clients dans leur d&eacute;veloppement et leurs transformations <strong>en s'appuyant sur un &eacute;cosyst&egrave;me de professionnels en r&eacute;gions</strong> :</p>
             <p>experts scientifiques, experts comptables, &eacute;tablissements bancaires, p&ocirc;les de comp&eacute;titivit&eacute;, f&eacute;d&eacute;rations professionnelles, avec un maillage de cabinets d'avocats et de m&eacute;decins ind&eacute;pendants.</p>
           </div>
